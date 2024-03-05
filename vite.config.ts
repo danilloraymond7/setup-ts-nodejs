@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [tsconfigPaths(), eslint()], // Configuração dos plugins do Vite. Aqui, usamos os plugins 'vite-tsconfig-paths' e 'vite-plugin-eslint'.
   server: {
     host: true, // Define o host do servidor como 'true', o que faz com que o Vite escolha automaticamente o IP de rede disponível.
-    port: 5017, // Define a porta do servidor como 5017.
+    port: 5000, // Define a porta do servidor como 5017.
     watch: {
       usePolling: true // Ativa o polling de arquivo para detectar alterações nos arquivos do projeto. Útil em ambientes de desenvolvimento remoto ou virtualizado.
     }

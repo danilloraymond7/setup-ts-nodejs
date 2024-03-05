@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./
+      target: development
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ".:/usr/app"
+      - "/usr/app/node_modules"
+    command: yarn start:dev

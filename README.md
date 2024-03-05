@@ -1,18 +1,21 @@
+Claro, vou adicionar instruções para a execução do Docker ao README:
+
+```markdown
 # Setup-ts-nodejs
 
-This repository provides a streamlined setup for a TypeScript Node.js project, making development and deployment more efficient. 
+Este repositório fornece uma configuração simplificada para um projeto TypeScript Node.js, tornando o desenvolvimento e o deployment mais eficientes.
 
-## Features
+## Características
 
-- **TypeScript Support**: Utilize the power of TypeScript for static typing and better code organization.
-- **Hot Reloading**: Enable automatic reloading during development with the `start:dev` script.
-- **Efficient Builds**: Build your project with minimal configuration using `tsup`.
-- **Commit Conventions**: Maintain a consistent commit message format with `commitizen` and `cz-conventional-changelog`.
-- **Git Hooks**: Ensure code quality and consistency with pre-commit hooks powered by `husky`.
-  
-## Installation
+- **Suporte ao TypeScript**: Utilize o poder do TypeScript para tipagem estática e melhor organização do código.
+- **Recarregamento Automático (Hot Reloading)**: Ative o recarregamento automático durante o desenvolvimento com o script `start:dev`.
+- **Construções Eficientes**: Construa seu projeto com configuração mínima usando `tsup`.
+- **Convenções de Commits**: Mantenha um formato de mensagem de commit consistente com `commitizen` e `cz-conventional-changelog`.
+- **Hooks do Git**: Garanta qualidade e consistência do código com hooks pré-commit fornecidos pelo `husky`.
 
-To get started, clone this repository and install the dependencies:
+## Instalação
+
+Para começar, clone este repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/your-username/setup-ts-nodejs.git
@@ -20,38 +23,54 @@ cd setup-ts-nodejs
 npm install
 ```
 
-## Usage
+## Uso
 
-### Development
+### Desenvolvimento
 
-Run the development server with hot reloading:
+Execute o servidor de desenvolvimento com recarregamento automático:
 
 ```bash
 npm run start:dev
 ```
 
-### Production Build
+### Build de Produção
 
-Generate a production-ready build:
+Gere um build pronto para produção:
 
 ```bash
 npm run build
 ```
 
-### Committing Changes
+### Commit de Alterações
 
-Commit your changes using the provided `git-commit` script:
+Comite suas alterações usando o script `git-commit` fornecido:
 
 ```bash
 npm run git-commit
 ```
 
-## License
+### Docker
 
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
+Execute a aplicação em um ambiente Docker:
 
-## Author
+```bash
+docker-compose up -d
 
-[Your Name](https://github.com/danilloraymond7)
 
-Feel free to customize this setup according to your project's specific requirements and contribute to the open-source community!
+```
+
+### makeFile
+
+Execute a aplicação em um ambiente Docker usando makeFile
+
+```bash
+make up
+
+## Autor
+
+[Seu Nome](https://github.com/danilloraymond7)
+
+Sinta-se à vontade para personalizar esta configuração de acordo com os requisitos específicos do seu projeto e contribuir para a comunidade de código aberto!
+```
+
+Essas instruções adicionam uma seção de Docker ao README, explicando como executar a aplicação em um ambiente Docker utilizando o Docker Compose.

@@ -25,7 +25,7 @@
     "paths": { // Mapeia caminhos de módulos para substituição de importações.
       "@controllers/*": [ // Define um alias para importações de módulos que correspondem a um padrão específico.
         "./src/controllers/*" // Define o caminho real correspondente ao alias especificado.
-      ]
+      ],
     }
   },
   "exclude": [ // Lista de padrões de arquivos e diretórios a serem excluídos da compilação.

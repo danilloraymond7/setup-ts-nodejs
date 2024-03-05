@@ -1,7 +1,4 @@
-console.log('hello world from serverr.ts')
-console.log('hello world 2')
-console.log('hello world 3')
-console.log('dsds')
+import controller from '@controllers/controller'
 
-const a = 1
-console.log(a)
+console.log('server.ts')
+console.log(controller)

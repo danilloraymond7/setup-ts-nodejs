@@ -1,3 +1,6 @@
+Aqui está o texto corrigido com a formatação adequada para um arquivo README do GitHub:
+
+```markdown
 # Setup-ts-nodejs
 
 Este repositório fornece uma configuração simplificada para um projeto TypeScript Node.js, tornando o desenvolvimento e o deployment mais eficientes.
@@ -18,7 +21,7 @@ Para começar, clone este repositório e instale as dependências:
 git clone https://github.com/your-username/setup-ts-nodejs.git
 cd setup-ts-nodejs
 npm install
-
+```
 
 ## Uso
 
@@ -52,16 +55,15 @@ Execute a aplicação em um ambiente Docker:
 
 ```bash
 docker-compose up -d
-
-
 ```
 
 ### makeFile
 
-Execute a aplicação em um ambiente Docker usando makeFile
+Execute a aplicação em um ambiente Docker usando makeFile:
 
 ```bash
 make up
+```
 
 ## Autor
 
@@ -70,4 +72,4 @@ make up
 Sinta-se à vontade para personalizar esta configuração de acordo com os requisitos específicos do seu projeto e contribuir para a comunidade de código aberto!
 ```
 
-Essas instruções adicionam uma seção de Docker ao README, explicando como executar a aplicação em um ambiente Docker utilizando o Docker Compose.
+Agora o arquivo está corrigido e pronto para ser usado como um README em um repositório do GitHub.

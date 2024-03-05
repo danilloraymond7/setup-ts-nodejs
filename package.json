@@ -8,10 +8,9 @@
     "start:dev": "tsx watch src/server.ts",
     "build": "tsup src",
     "prepare": "husky install",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint src/**/*.ts",
     "commit": "git-cz",
-    "git-commit": "git pull origin HEAD && git add . && npm run commit && git push origin HEAD"
+    "git-commit": "npm run lint && git pull origin HEAD && git add . && npm run commit && git push origin HEAD"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +27,7 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
     "typescript": "*"
@@ -39,7 +39,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint . --ext .ts"
+      "pre-commit": "lint-stage"
     }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "yarn lint --fix",
+      "git add"
+    ]
   }
 }

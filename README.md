@@ -1,6 +1,3 @@
-Claro, vou adicionar instruções para a execução do Docker ao README:
-
-```markdown
 # Setup-ts-nodejs
 
 Este repositório fornece uma configuração simplificada para um projeto TypeScript Node.js, tornando o desenvolvimento e o deployment mais eficientes.
@@ -21,7 +18,7 @@ Para começar, clone este repositório e instale as dependências:
 git clone https://github.com/your-username/setup-ts-nodejs.git
 cd setup-ts-nodejs
 npm install
-```
+
 
 ## Uso
 

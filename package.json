@@ -8,7 +8,10 @@
     "start:dev": "tsx watch src/server.ts",
     "build": "tsup src",
     "prepare": "husky install",
-      "commit": "git-cz"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "commit": "git-cz",
+    "git-commit": "git pull origin HEAD && git add . && npm run commit && git push origin HEAD"
   },
   "keywords": [],
   "author": "",
@@ -16,16 +19,27 @@
   "devDependencies": {
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
     "husky": "^9.0.11",
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "*"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint . --ext .ts"
     }
   }
 }

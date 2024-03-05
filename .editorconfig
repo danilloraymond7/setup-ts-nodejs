@@ -1,0 +1,30 @@
+# EditorConfig helps developers define and maintain consistent coding styles
+# across different editors and IDEs
+
+# Top-most EditorConfig file
+root = true
+
+# Set the default charset
+[*]
+charset = utf-8
+
+# Indentation settings
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.ts]
+indent_style = space
+indent_size = 2
+
+# End of line settings
+[*.{js,ts}]
+end_of_line = lf
+
+# Trim trailing whitespace
+[*.{js,ts}]
+trim_trailing_whitespace = true
+
+# Insert final newline
+[*.{js,ts}]
+insert_final_newline = true
